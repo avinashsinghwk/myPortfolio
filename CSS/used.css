@@ -1,0 +1,171 @@
+.my-name{
+    position: absolute;
+    user-select: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.button {
+    padding: 0.7rem 1.5rem;
+    background-color: rgb(255, 0, 0, 0.7);
+    color: white;
+    cursor: pointer;
+    border: none;
+    filter: drop-shadow(0 0 5px black);
+    font-weight: bold;
+    position: relative;
+    width: fit-content;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0px;
+    height: 100%;
+    background-color: blueviolet;
+    z-index: -1;
+    transition: width 0.5s linear;
+}
+.button:hover::before {
+    width: 100%;
+}
+
+.color_black{
+    color: var(--black);
+}
+.color_white{
+    color: var(--white);
+}
+.bg_white{
+    background-color: var(--white);
+}
+.bg_black{
+    background-color: var(--black);
+}
+.light_black{
+    background-color: var(--light_black);
+}
+
+
+@keyframes home-right {
+    0% {
+        transform: scale(1);
+        box-shadow: 2px 2px 2px 2px rgb(82, 75, 75), -0.2px -0.2px 1px 1px rgb(82, 75, 75);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow: 1px 1px 2px 2px rgb(82, 75, 75);
+        box-shadow: none;
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 2px 2px 2px 2px rgb(82, 75, 75), -0.2px -0.2px 1px 1px rgb(82, 75, 75);
+    }
+}
+
+@keyframes my-img {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        filter: grayscale(100%);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: grayscale(none);
+    }
+}
+
+@keyframes circ {
+    0% {
+        transform: translate(none);
+    }
+
+    50% {
+        transform: translate(1rem, -1rem);
+    }
+
+    100% {
+        transform: translate(none);
+    }
+}
+
+@keyframes curv {
+    0% {
+        transform: translate(none);
+    }
+
+    50% {
+        transform: translate(0, 1rem);
+    }
+
+    100% {
+        transform: translate(none);
+    }
+}
+
+@keyframes cub {
+    0% {
+        transform: rotateZ(none) translateY(0);
+    }
+
+    50% {
+        transform: rotateZ(180deg) translateY(-0.5rem);
+    }
+
+    100% {
+        transform: rotateZ(360deg) translateY(0);
+    }
+}
+
+@keyframes plu {
+    0% {
+        transform: translate(none);
+    }
+
+    50% {
+        transform: translate(0, -1rem);
+    }
+
+    100% {
+        transform: translate(none);
+    }
+}
+
+@keyframes dot {
+    0% {
+        transform: translate(none);
+    }
+
+    50% {
+        transform: translate(-1rem, -1rem);
+    }
+
+    100% {
+        transform: translate(none);
+    }
+}
+
+@keyframes bubble {
+
+    50%{
+        bottom: 15%;
+        left: 15%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.absolute{
+    position: absolute;
+}
