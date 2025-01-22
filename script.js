@@ -25,7 +25,7 @@ if (localStorage.getItem("theme") == null) {
     localStorage.setItem("theme", "light")
 }
 
-function theme(){
+function theme() {
     if (localStorage.getItem("theme") == "dark") {
         header.classList.add("bg_black")
         home.classList.add("light_black")
@@ -101,3 +101,36 @@ contact.addEventListener("click", () => {
 footer.addEventListener("click", () => {
     links.classList.remove("disp_flex")
 })
+
+
+// resume btn download
+
+function resumeDownloadBtn() {
+    const link = document.createElement('a');
+    link.href = './My_Resume.pdf';
+    link.download = 'Avinash_Resume.pdf';
+    link.click();
+}
+
+// send message btn click
+
+function sendMessageBtnClick(e) {
+    alert('Unable to send right now')
+}
+
+// project btns click
+
+function project_btn1Click() {
+    window.location.href = "https://medium-blog-frontend.vercel.app"
+}
+function project_btn2Click() {
+    window.location.href = "https://github.com/avinashsinghwk/Authentication_In_Next_Using_Cookies"
+}
+function project_btn3Click() {
+    window.location.href = "https://sistya-tic-tac-toe.netlify.app/"
+    
+}
+function project_btn4Click() {
+    window.location.href = "https://sistya-todolist.netlify.app/"
+
+}

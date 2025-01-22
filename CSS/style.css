@@ -43,7 +43,7 @@ nav{
 .logo span{
     font-size: 2.3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .links ul{
     display: flex;
@@ -51,13 +51,12 @@ nav{
     list-style: none;
 }
 .links ul li a{
-    font-size: 1.3rem;
-    font-weight:500;
+    font-size: 1.2rem;
+    font-weight:600;
     text-decoration: none;
 }
 .links ul li a:hover{
-    transition: 1s;
-    font-weight: bold;
+    color: rgb(255, 0, 0, 0.7);
 }
 .mode{
     width: 1.4rem;
@@ -275,33 +274,24 @@ nav{
     font-size: 0.9rem;    
 }
 .project1{
-    background: url("../Img/web1.png") no-repeat center/cover;
+    background: url("../Img/project1.png") no-repeat center/cover;
 }
 .project2{
     background: url("../Img/web2.png") no-repeat center/cover;
     align-self: flex-end;
 }
 .project3{
-    background: url("../Img/web3.png") no-repeat center/cover;
+    background: url("../Img/project3.png") no-repeat center/cover;
 }
 .project4{
-    background: url("../Img/web4.png") no-repeat center/cover;
+    background: url("../Img/project4.png") no-repeat center/cover;
     align-self: flex-end;
 }
 .project-img img{
     width: 2rem;
     height: 2rem;
 }
-.project-btn img{
-    width: 1.5rem;
-    height: 1.5rem;
-    cursor: pointer;
-}
-.project-btn{
-    display: flex;
-    column-gap: 0.5rem;
-    align-items: center;
-}
+
 .project-info{
     position: absolute;
     z-index: 1;
@@ -451,7 +441,7 @@ nav{
     color: blueviolet;
     letter-spacing: 0.2rem;
 }
-form{
+.form{
     margin-top: 3rem;
     width: 85%;
     display: flex;

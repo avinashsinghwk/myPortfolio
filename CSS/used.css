@@ -6,15 +6,21 @@
 }
 
 .button {
-    padding: 0.7rem 1.5rem;
+    padding: 0.9rem 1.7rem;
     background-color: rgb(255, 0, 0, 0.7);
     color: white;
     cursor: pointer;
     border: none;
     filter: drop-shadow(0 0 5px black);
-    font-weight: bold;
+    font-weight: bolder;
     position: relative;
     width: fit-content;
+    font-size: 1rem;
+}
+
+.project_btn{
+    padding: 0.7rem 1.5rem;
+    font-size: 0.8rem;
 }
 
 .button::before {
@@ -54,18 +60,18 @@
 @keyframes home-right {
     0% {
         transform: scale(1);
-        box-shadow: 2px 2px 2px 2px rgb(82, 75, 75), -0.2px -0.2px 1px 1px rgb(82, 75, 75);
+        box-shadow: 4px 4px 4px 4px rgb(255, 0, 0, 0.7), -0.2px -0.2px 1px 1px rgb(255, 0, 0, 0.7);
     }
 
     50% {
         transform: scale(1.1);
-        box-shadow: 1px 1px 2px 2px rgb(82, 75, 75);
+        box-shadow: 1px 1px 2px 2px rgb(255, 0, 0, 0.7);
         box-shadow: none;
     }
 
     100% {
         transform: scale(1);
-        box-shadow: 2px 2px 2px 2px rgb(82, 75, 75), -0.2px -0.2px 1px 1px rgb(82, 75, 75);
+        box-shadow: 4px 4px 4px 4px rgb(255, 0, 0, 0.7), -0.2px -0.2px 1px 1px rgb(255, 0, 0, 0.7);
     }
 }
 
